@@ -1,0 +1,84 @@
+﻿@model IEnumerable<KVVKWeb.Models.Entities.Management>
+
+@{
+    ViewData["Title"] = "ListAccess";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <table class="table table-bordered table-checkable" id="kt_datatable">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PolicyName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.FileorDirectory)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Path)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.IncludeSubDir)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.UnwantedDir)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.WantedExtensions)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.UnwantedExtensions)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.AuthClass)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.UserName)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PolicyName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.FileorDirectory)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Path)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.IncludeSubDir)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.UnwantedDir)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.WantedExtensions)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.UnwantedExtensions)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.AuthClass)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.UserName)
+                            </td>
+                            <td>
+                                <a asp-action="EditAccess" asp-route-id="@item.EncryptedID">Edit</a> |
+                                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

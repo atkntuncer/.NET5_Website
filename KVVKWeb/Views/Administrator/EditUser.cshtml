@@ -1,0 +1,98 @@
+﻿@model KVVKWeb.Models.Entities.CustomerInfo
+@inject Microsoft.AspNetCore.Identity.UserManager<KVVKWeb.Models.Entities.CustomerInfo> UserManager
+
+@{
+    ViewData["Title"] = "EditUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <form asp-action="EditUser" method="post" class="col-lg-12">
+        <div class="card">
+            <div class="row">
+                <div class="card-body d-flex">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="Email" class="col-form-label text-left">Email </label>
+                            <input asp-for="Email" type="text" class="form-control"  />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Name" class="col-form-label text-left">Name </label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="LastName" class="col-form-label text-left">Lastname </label>
+                            <input asp-for="LastName" class="form-control" />
+                            <span asp-validation-for="LastName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="NationalID" class="col-form-label text-left">NationalID </label>
+                            <input asp-for="NationalID" class="form-control" />
+                            <span asp-validation-for="NationalID" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="CompanyName" class="col-form-label text-left">Company Name</label>
+                            <input asp-for="CompanyName" class="form-control" />
+                            <span asp-validation-for="CompanyName" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="DateofBirth" class="col-form-label text-left">Date of Birth</label>
+                            <input asp-for="DateofBirth" class="form-control" type="date" />
+                            <span asp-validation-for="DateofBirth" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="PhoneNumber" class="col-form-label text-left">Phone Number</label>
+                            <input asp-for="PhoneNumber" class="form-control" />
+                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="MobilePhone" class="col-form-label text-left">Mobile Phone Number</label>
+                            <input asp-for="MobilePhone" class="form-control" />
+                            <span asp-validation-for="MobilePhone" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Adress" class="col-form-label text-left">Adress</label>
+                            <input asp-for="Adress" class="form-control" />
+                            <span asp-validation-for="Adress" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="LockoutEnd" class="col-form-label text-left">LockoutEnd</label>
+                            <input asp-for="LockoutEnd" class="form-control" type="datetime-local" />
+                            <span asp-validation-for="LockoutEnd" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-group" style="margin-left:25px">
+                        <input type="submit" value="Change Informations" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h2>Roles</h2>
+        </div>
+        <div class="card-body d-flex">
+            <div class="row">
+                @{
+                    var roles = await UserManager.GetRolesAsync(Model);
+                    foreach (var item in roles)
+                    {
+                        <div class="col-lg-12">
+                            <h2>@item</h2>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+

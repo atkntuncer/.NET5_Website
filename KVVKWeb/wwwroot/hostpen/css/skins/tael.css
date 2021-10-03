@@ -1,0 +1,136 @@
+/******************************************
+    File Name: tael.css
+    Template Name: HostPen
+    Created By: PSD Convert HTML Team
+    Envato Profile: http://themeforest.net/user/psdconverthtml
+    Website: http://psdconverthtml.com/
+    Version: 1.0
+/******************************************
+
+/******************************************
+    COLORS
+******************************************/
+
+
+/* BLUE */
+
+.stat-count,
+.notfound a,
+.notfound h2 span,
+.helpwrap h4,
+.bigger-title,
+.pricing-bigger .pricing-body.active li,
+blockquote .small,
+blockquote footer,
+blockquote small,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover,
+a:hover,
+a:focus,
+#testimonials-rotate small,
+.section-mini-title.widget-title h3 span,
+.flat ul li:before,
+.flat .plan h2,
+.footer a:hover,
+.testimonial small,
+.footer a:focus,
+.footer li:hover a,
+.contactlist i {
+    color: #16a085 !important;
+}
+
+mark,
+.host-pricing ul li:hover,
+.skills .progress-bar,
+.pagination > li > a,
+.pagination > li > span,
+.normal-header .dropdown-menu > li:hover,
+.normal-header .dropdown-menu > li:focus,
+.customtab .nav-pills > li.active > a,
+.customtab .nav-pills > li.active > a:focus,
+.customtab .nav-pills > li.active > a:hover,
+.checkdomain-wrapper,
+.colorized .btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.backtotop i,
+.footer,
+.normal-header .navbar-nav > li.clientlogin:hover a,
+.normal-header .navbar-nav > li.clientlogin:focus a {
+    background-color: #16a085 !important;
+    border-color: #16a085 !important;
+    color: #ffffff !important;
+}
+
+.hovicon.effect-1:after {
+    box-shadow: 0 0 0 4px #16a085;
+}
+
+.pricing-bigger .pricing-header,
+.customtab .nav-pills > li.active:after {
+    border-top-color: #16a085;
+}
+
+.blockquote-reverse,
+blockquote.pull-right,
+.widget-title hr,
+blockquote {
+    border-color: #16a085;
+}
+
+.twitter_feed li a,
+.pricing-bigger .pricing-body .fa-check,
+.hover-services .box i,
+#custom-search-input a {
+    color: #8bc34a !important;
+}
+
+
+/* BLUE:HOVER */
+
+.custombg,
+.hovicon.effect-1,
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.normal-header .dropdown-menu > li,
+.colorized,
+.checkbox-primary input[type="checkbox"]:checked + label::before,
+.checkbox-primary input[type="radio"]:checked + label::before,
+.flat .plan.featured li.plan-name,
+.withbg,
+.topbar .dropdown-menu li:hover,
+.btn-primary,
+.normal-header .navbar-nav > li.clientlogin a,
+.copyrights {
+    background-color: #1abc9c !important;
+    border-color: #1abc9c !important;
+    color: #ffffff !important;
+}
+
+.normal-header .navbar-nav .has-submenu .dropdown-menu:after {
+    border-bottom-color: #1abc9c !important;
+}
+
+.widget-title.withbg:after {
+    border-top-color: #1abc9c;
+}
+
+.customfooter {
+    box-shadow: 15px 10px #1abc9c;
+}
+
+.colorized .btn-primary {
+    box-shadow: 5px 5px #1abc9c !important;
+}
+
+.checkdomain-wrapper {
+    box-shadow: 15px 10px #1abc9c !important;
+}
+
+.form-control:focus,
+.tp-shape,
+.tp-caption.tp-shape,
+.widget-title h3 {
+    border-color: #1abc9c !important;
+}

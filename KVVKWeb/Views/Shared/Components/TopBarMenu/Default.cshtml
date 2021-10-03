@@ -1,0 +1,97 @@
+﻿<div id="kt_header" class="header header-fixed">
+    <div class="container-fluid d-flex align-items-stretch justify-content-between">
+        <div class="header-menu-wrapper header-menu-wrapper-left" id="kt_header_menu_wrapper">
+        </div>
+        <div class="topbar">         
+            @if (!User.Identity.IsAuthenticated)
+            {
+                <div class="topbar">
+                    <a asp-controller="Account" asp-action="Login" class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">Login</a>
+                    <a asp-controller="Account" asp-action="Create" class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">Register</a>
+
+                </div>
+            }
+            else
+            {
+                <div class="topbar">
+                    <div class="dropdown">
+                        <div class="topbar-item">
+                            <div class="btn btn-icon btn-icon-mobile w-auto btn-clean d-flex align-items-center btn-lg px-2" id="kt_quick_user_toggle">
+                                <span class="text-muted font-weight-bold font-size-base d-none d-md-inline mr-1">Hi, </span>
+                                <a asp-controller="Account" asp-action="UserInfo" class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">@User.Identity.Name</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-right">
+                            <ul class="navi navi-hover py-4">
+                                <li class="navi-item">
+                                    <a asp-action="Update" class="navi-link">
+                                        <span class="symbol symbol-20 mr-3">
+                                            <img src="~/assets/media/svg/flags/128-spain.svg" alt="" />
+                                        </span>
+                                        <span class="navi-text">Update</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="topbar-item">
+                        <div class="btn btn-icon btn-icon-mobile w-auto btn-clean d-flex align-items-center btn-lg px-2" id="kt_quick_user_toggle">
+                            <a asp-controller="Account" asp-action="Logout" class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">Logout</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
+                            <div class="btn btn-icon btn-clean btn-dropdown btn-lg mr-1">
+                                <img class="h-20px w-20px rounded-sm" src="~/assets/media/svg/flags/226-united-states.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-right">
+                            <ul class="navi navi-hover py-4">
+                                <li class="navi-item">
+                                    <a href="#" class="navi-link">
+                                        <span class="symbol symbol-20 mr-3">
+                                            <img src="assets/media/svg/flags/226-united-states.svg" alt="" />
+                                        </span>
+                                        <span class="navi-text">English</span>
+                                    </a>
+                                </li>
+                                <li class="navi-item active">
+                                    <a href="#" class="navi-link">
+                                        <span class="symbol symbol-20 mr-3">
+                                            <img src="assets/media/svg/flags/128-spain.svg" alt="" />
+                                        </span>
+                                        <span class="navi-text">Spanish</span>
+                                    </a>
+                                </li>
+                                <li class="navi-item">
+                                    <a href="#" class="navi-link">
+                                        <span class="symbol symbol-20 mr-3">
+                                            <img src="assets/media/svg/flags/162-germany.svg" alt="" />
+                                        </span>
+                                        <span class="navi-text">German</span>
+                                    </a>
+                                </li>
+                                <li class="navi-item">
+                                    <a href="#" class="navi-link">
+                                        <span class="symbol symbol-20 mr-3">
+                                            <img src="assets/media/svg/flags/063-japan.svg" alt="" />
+                                        </span>
+                                        <span class="navi-text">Japanese</span>
+                                    </a>
+                                </li>
+                                <li class="navi-item">
+                                    <a href="#" class="navi-link">
+                                        <span class="symbol symbol-20 mr-3">
+                                            <img src="assets/media/svg/flags/195-france.svg" alt="" />
+                                        </span>
+                                        <span class="navi-text">French</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

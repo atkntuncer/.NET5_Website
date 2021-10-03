@@ -1,0 +1,90 @@
+﻿@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+@model KVVKWeb.Models.Dto.LoginModel
+@{
+
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <base href="../../../">
+    <meta charset="utf-8" />
+    <meta name="description" content="Login page example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="canonical" href="https://keenthemes.com/metronic" />
+    <!--begin::Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+    <!--end::Fonts-->
+    <!--begin::Page Custom Styles(used by this page)-->
+    <link href="assets/css/pages/login/login-1.css" rel="stylesheet" type="text/css" />
+    <!--end::Page Custom Styles-->
+    <!--begin::Global Theme Styles(used by all pages)-->
+    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <!--end::Global Theme Styles-->
+    <!--begin::Layout Themes(used by all pages)-->
+    <link href="assets/css/themes/layout/header/base/light.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/themes/layout/header/menu/light.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/themes/layout/brand/dark.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/themes/layout/aside/dark.css" rel="stylesheet" type="text/css" />
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <!--end::Layout Themes-->
+    @*<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />*@
+</head>
+<body>
+    <div class="login-content flex-row-fluid d-flex flex-column justify-content-center position-relative overflow-hidden p-7 mx-auto">
+        <!--begin::Content body-->
+        <div class="d-flex flex-column-fluid flex-center">
+            <!--begin::Signin-->
+            <div class="login-form login-signin">
+                <!--begin::Form-->
+                <form asp-action="Login" method="post" id="kt_login_signin_form">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <!--begin::Title-->
+                    <div class="pb-13 pt-lg-0 pt-5">
+                        <h3 class="font-weight-bolder text-dark font-size-h4 font-size-h1-lg">Welcome</h3>
+                        <span class="text-muted font-weight-bold font-size-h4">
+                            New Here?
+                            <a asp-controller="Account" asp-action="Create" id="kt_login_signup" class="text-primary font-weight-bolder">Create an Account</a>
+                        </span>
+                    </div>
+                    <!--begin::Title-->
+                    <!--begin::Form group-->
+                    <div class="form-group">
+                        <label class="font-size-h6 font-weight-bolder text-dark">Email</label>
+                        <input asp-for="Email" class="form-control form-control-solid h-auto py-6 px-6 rounded-lg" type="text" autocomplete="off" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <!--end::Form group-->
+                    <!--begin::Form group-->
+                    <div class="form-group">
+                        <div class="d-flex justify-content-between mt-n5">
+                            <label class="font-size-h6 font-weight-bolder text-dark pt-5">Password</label>
+                            <a asp-controller="Account" asp-action="ForgotPassword" class="text-primary font-size-h6 font-weight-bolder text-hover-primary pt-5" id="kt_login_forgot">Forgot Password ?</a>
+                        </div>
+                        <input asp-for="Password" class="form-control form-control-solid h-auto py-6 px-6 rounded-lg" type="password" autocomplete="off" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div hidden>
+                        <input asp-for="ReturnUrl" value="@ViewBag.ReturnUrl" />
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label class="font-size-h6 font-weight-bolder text-dark pt-5" asp-for="RememberMe">
+                                <input asp-for="RememberMe" /> @Html.DisplayNameFor(model => model.RememberMe)
+                            </label>
+                        </div>
+                    </div>
+                    <div class="pb-lg-0 pb-5 text-center">
+                        <input type="submit" id="kt_login_signin_submit" class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-4 my-3 mr-3" value="Login" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

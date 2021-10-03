@@ -1,0 +1,102 @@
+/******************************************
+    File Name: dark.css
+    Template Name: HostPen
+    Created By: PSD Convert HTML Team
+    Envato Profile: http://themeforest.net/user/psdconverthtml
+    Website: http://psdconverthtml.com/
+    Version: 1.0
+/******************************************
+
+/******************************************
+    DARK
+******************************************/
+
+.payment-methods,
+.widget-title.withbg,
+.rev-btn, .tp-caption.rev-btn, .btn-flat {
+    box-shadow: 5px 5px #4e4e4e !important;
+}
+
+blockquote,
+.payment-methods,
+.section-mini-title.widget-title::after {
+    background: #121212;
+}
+
+.helpwrap,
+.comments .media-list li,
+.tags a,
+.blog-wrapper,
+.section-mini-title.widget-title::after,
+.section-mini-title.widget-title,
+#testimonials-rotate,
+#testimonials-rotate .pull-right .fa,
+hr,
+.flat .plan {
+    border-color:#333333;
+}
+.sitemap-widget li,
+.pricing-bigger,
+.wb,
+.flat .plan .plan-name {
+    border-color:#333333 !important;
+}
+
+.tp-shape,
+.tp-caption.tp-shape {
+    background-color:#121212 !important;
+}
+.testimonial,
+.section.gr,
+.vertical-skills li,
+.host-pricing,
+.contact_form.comment-form .form-control,
+.img-thumbnail,
+.form-control,
+.checkdomain-wrapper .checkbox input,
+.checkdomain-wrapper .form-control,
+.payment-methods,
+.first_accordion .panel-primary > .panel-heading,
+.customfooter::before,
+.customfooter,
+.customtab.nav-top .nav-pills > li > a,
+.section.lb,
+.header,
+.topbar {
+    background-color:#212121;
+    border-color:#333333 !important;
+}
+
+.bigger-title h2 {
+    color:#1a1a1a !important;
+}
+
+.bigger-title h4 {
+    color:#999999 !important;
+}
+
+.service-box,
+.pricing-bigger .pricing-header, .customtab .nav-pills > li.active::after,
+.pricing-bigger .pricing-body ul li,
+.pricing-header.whitebg {
+    background-color:#121212 !important;
+}
+
+.host-pricing ul li,
+.first_accordion.withcolorful i,
+.section {
+    background-color:#121212;
+}
+
+.tp-caption.PostSlider-Title, .PostSlider-Title,
+.skills p,
+.pricing-bigger .pricing-body ul li,
+.media-heading, .media-heading a,
+.blog-wrapper .blog-desc h3, .blog-wrapper .blog-desc h3 a,
+.topbar li, .topbar a, .topbar p,
+.normal-header .navbar-nav > li > a,
+h1, h2, h3, h4, h5, h6,
+.widget-title h3,
+.widget-title.withbg h3 {
+    color: #f9f9f9 !important;
+}

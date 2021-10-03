@@ -1,0 +1,42 @@
+﻿@model KVVKWeb.Models.Entities.KeyInfo
+
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <table class="table table-bordered table-checkable" id="kt_datatable">
+                <thead>
+                    <tr>
+                        <th>
+                            Key Name
+                        </th>
+                        <th>
+                            Key Type
+                        </th>
+                        <th>
+                            Key Bit
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            @Model.KeyLabel
+                        </td>
+                        <td>
+                           @Model.KeyType
+                        </td>
+                        <td>
+                            @Model.KeyBit
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

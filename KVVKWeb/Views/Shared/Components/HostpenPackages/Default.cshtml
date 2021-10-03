@@ -1,0 +1,102 @@
+﻿@model IEnumerable<KVVKWeb.Models.Entities.Packages>
+@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="row">
+    <div class="col-md-12">
+        <!-- tabs left -->
+        <div class="tabbable customtab nav-top">
+            <ul class="nav nav-pills">
+                <li class="active">
+                    <a href="#a1" data-toggle="tab">
+                        <i class="fa fa-windows alignleft"></i>
+                        <h3>Paketler</h3>
+                        <p>Starting from $25.00 / month</p>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="a1">
+                    <div class="tab-padding clearfix">
+                        <div class="row flat">
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="plan plan2">
+                                        <div class="plan-name row">
+                                            <div class="col-md-8">
+                                                <h4>@item.Description</h4>
+                                                <p>per site / month</p>
+                                            </div><!-- end col -->
+                                            <div class="col-md-4">
+                                                <h2><sup>$</sup> @Decimal.Round(item.Price, 2)</h2>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                        <ul>
+                                            <li>Client sayısı - @item.ClientCount</li>
+                                            @*
+                                                <li>Bandwidth - 1gb</li>
+                                                <li>Free Domain - 1</li>
+                                            *@
+                                        </ul>
+ 
+                                        <div class="plan-action">
+                                            <a asp-controller="Account" asp-action="Buy" asp-route-id="@item.ID" class="btn btn-primary btn-flat btn-block">Order Now</a>
+                                        </div>
+                                    </div><!-- end plan -->
+                                </div>
+                            }
+                            <!-- end col -->
+                            @*
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="plan plan2 featured">
+                                        <div class="plan-name row">
+                                            <div class="col-md-8">
+                                                <h4>Windows Pro</h4>
+                                                <p>per site / month</p>
+                                            </div><!-- end col -->
+                                            <div class="col-md-4">
+                                                <h2><sup>$</sup> 55</h2>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                        <ul>
+                                            <li>Disk Space - 1gb</li>
+                                            <li>Bandwidth - 5gb</li>
+                                            <li>Free Domain - 2</li>
+                                        </ul>
+                                        <div class="plan-action">
+                                            <a href="#" class="btn btn-inverse btn-flat btn-block">Order Now</a>
+                                        </div>
+                                    </div><!-- end plan -->
+                                </div><!-- end col -->
+
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="plan plan2">
+                                        <div class="plan-name row">
+                                            <div class="col-md-8">
+                                                <h4>Windows Ultimate</h4>
+                                                <p>per site / month</p>
+                                            </div><!-- end col -->
+                                            <div class="col-md-4">
+                                                <h2><sup>$</sup> 105</h2>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                        <ul>
+                                            <li>Disk Space - Unlimited</li>
+                                            <li>Bandwidth - Unlimited</li>
+                                            <li>Free Domain - 2</li>
+                                        </ul>
+                                        <div class="plan-action">
+                                            <a href="#" class="btn btn-primary btn-flat btn-block">Order Now</a>
+                                        </div>
+                                    </div><!-- end plan -->
+                                </div><!-- end col -->
+                            *@
+                        </div><!-- end row -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

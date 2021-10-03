@@ -1,0 +1,77 @@
+﻿@model KVVKWeb.Models.Entities.Management
+
+@{
+    ViewData["Title"] = "EditAccess";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="card">
+        <form asp-action="EditAccess">
+            <div class="row">
+                <div class="card-body d-flex">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="col-lg-6">
+                        <input type="hidden" asp-for="ID" value="@Model.ID" />
+                        <div class="form-group">
+                            <label asp-for="PolicyName" class="control-label"></label>
+                            <input asp-for="PolicyName" class="form-control" />
+                            <span asp-validation-for="PolicyName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input asp-for="FileorDirectory" /> @Html.DisplayNameFor(model => model.FileorDirectory)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Path" class="control-label"></label>
+                            <input asp-for="Path" class="form-control" />
+                            <span asp-validation-for="Path" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input asp-for="IncludeSubDir" /> @Html.DisplayNameFor(model => model.IncludeSubDir)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="UnwantedDir" class="control-label"></label>
+                            <input asp-for="UnwantedDir" class="form-control" />
+                            <span asp-validation-for="UnwantedDir" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="WantedExtensions" class="control-label"></label>
+                            <input asp-for="WantedExtensions" class="form-control" placeholder="Leave empty for all" />
+                            <span asp-validation-for="WantedExtensions" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="UnwantedExtensions" class="control-label"></label>
+                            <input asp-for="UnwantedExtensions" class="form-control" />
+                            <span asp-validation-for="UnwantedExtensions" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="AuthClass" class="control-label"></label>
+                            <input asp-for="AuthClass" class="form-control" />
+                            <span asp-validation-for="AuthClass" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="UserName" class="control-label"></label>
+                            <input asp-for="UserName" class="form-control" />
+                            <span asp-validation-for="UserName" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <input type="submit" value="Edit Rule" class="btn btn-primary" style="margin-left:25px" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+﻿@model KVVKWeb.Models.Dto.RoleModel
+@{
+    ViewData["Title"] = "CreateRole";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <div class="container">
+        <div class="card">
+            <form asp-controller="Role" asp-action="AddRoleToUser">
+                <table>
+                    <tr>
+                        <td>
+                            <label asp-for="UserID">Users:</label>
+                        </td>
+                        <td>
+                            @*
+        <select asp-for="UserID" asp-items="@(new SelectList(Model.Customers,"Userid","Email").Where(i=>i.Text!="atakan.tuncer@paycore.com").ToList())">
+            <option>Bir kullanıcı seçiniz</option>
+        </select>
+                            *@
+                            <select asp-for="UserID" asp-items="@(new SelectList(Model.Customers,"Userid","Email"))">
+                                <option>Bir kullanıcı seçiniz</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label asp-for="RoleName">Roles</label>
+                        </td>
+                        <td>
+                            <select asp-for="RoleName" asp-items="@(new SelectList(Model.RoleNames))">
+                                <option>Bir rol seçiniz</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit">Save</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>

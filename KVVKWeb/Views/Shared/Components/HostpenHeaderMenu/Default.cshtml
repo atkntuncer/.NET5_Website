@@ -1,0 +1,51 @@
+﻿
+        <nav class="navbar navbar-default yamm">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <a class="navbar-brand with-text" asp-controller="Home" asp-action="Index"><img src="~/hostpen/images/paycore_hostpen.png" alt=""></a>
+                </div>
+                <!-- end navbar header -->
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="dropdown has-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="page-about.html">About us</a></li>
+                                <li><a href="page-services.html">Services</a></li>
+                                <li><a href="page-clients.html">Testimonials</a></li>
+                                <li><a href="page.html">Standard Page</a></li>
+                                <li><a href="page-404.html">Not Found</a></li>
+                                <li><a href="page-faqs.html">FAQs & Support</a></li>
+                                <li><a href="page-elements.html">Elements</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="hosting-web.html">Web Hosting</a></li>
+                        <li><a href="domain.html">Domain</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <li class="clientlogin" style="background-color:#002f9b"><a asp-controller="Account" asp-action="Login"><i class="fa fa-sign-in"></i> <span>Client Login</span></a></li>
+                            <li class="signup"><a asp-controller="Account" asp-action="Create"><i class="fa fa-key"></i> <span>Signup</span></a></li>
+                        }
+                        else
+                        {
+                            <li class="signup"><a asp-controller="Account" asp-action="UserInfo"><i class="fa fa-key"></i> <span>Management</span></a></li>
+                            <li class="clientlogin" style="background-color:#002f9b"><a asp-controller="Account" asp-action="Logout"><i class="fa fa-sign-in"></i> <span>Logout</span></a></li>
+                        }
+
+                    </ul>
+                    <!-- end dropdown -->
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+        <!-- end nav -->

@@ -1,0 +1,198 @@
+/******************************************
+    File Name: responsive.css
+    Template Name: HostPen
+    Created By: PSD Convert HTML Team
+    Envato Profile: http://themeforest.net/user/psdconverthtml
+    Website: http://psdconverthtml.com/
+    Version: 1.0
+/******************************************
+
+/******************************************
+    RESPONSIVE
+******************************************/
+
+
+@media (max-width: 837px) {
+    .messagebox {
+        margin: 20px 0;
+    }
+    .bigger-title .lead {
+        padding-top: 30px;
+    }
+    .absolutewrap {
+        left: auto;
+        right: auto;
+        z-index: 100;
+        top: 0;
+        position: relative !important;
+    }
+    .customtab.nav-top .nav-pills i {
+        display: none;
+    }
+    .flat .plan.featured {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+    .topbar .text-right {
+        margin-top: 5px;
+    }
+    .copyrights,
+    .copyrights .text-right,
+    .topbar .text-right,
+    .topbar {
+        text-align: center;
+    }
+    .normal-header .dropdown-menu > li {
+        border: 0 none;
+        padding: 0;
+    }
+    .normal-header .navbar-nav .has-submenu .dropdown-menu {
+        padding: 10px !important;
+    }
+}
+
+@media (max-width: 1082px) {
+    .signup span,
+    .clientlogin span {
+        display: none
+    }
+    .normal-header .navbar-nav > li > a {
+        padding: 5px 7px;
+        font-size: 11px;
+    }
+    .normal-header .navbar-brand.with-text {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 468px) {
+    .colorized h3 {
+        margin-bottom: 20px;
+    }
+    .customtab.nav-top .nav-pills > li {
+        width: 100%;
+        margin: 0;
+    }
+    .checkdomain-wrapper .btn,
+    .checkdomain-wrapper .form-control {
+        width: 100%;
+    }
+    .footer-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .page-wrapper .widget {
+        padding-bottom: 0;
+    }
+    .normal-header .navbar-nav > li.signup i,
+    .normal-header .navbar-nav > li.clientlogin i {
+        padding-right: 3px;
+    }
+    .normal-header .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .normal-header .hasmenu:hover > ul {
+        visibility: visible;
+        opacity: 1;
+        top: 100%;
+    }
+    .normal-header .navbar-nav .hasmenu ul {
+        -webkit-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+        -moz-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+        -o-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+        transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+    }
+    .normal-header .hasmenu .dropdown-menu {
+        min-width: 220px;
+        padding: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+    .normal-header .hasmenu > ul {
+        position: absolute;
+        top: 130%;
+        visibility: hidden;
+        display: block;
+        opacity: 0;
+        left: 0;
+    }
+    .normal-header .hasmenu > ul.start-right {
+        right: 0;
+        left: auto;
+    }
+    .normal-header .hasmenu > ul li {
+        position: relative;
+    }
+    .normal-header .hasmenu > ul li:hover > ul {
+        visibility: visible;
+        opacity: 1;
+        left: 100%;
+    }
+    .normal-header .hasmenu > ul li:hover > ul.show-right {
+        right: 100%;
+    }
+    .normal-header .navbar-nav .has-submenu {
+        position: relative;
+    }
+    .normal-header .navbar-nav .has-submenu:hover > ul {
+        visibility: visible;
+        opacity: 1;
+        top: 100%;
+    }
+    .normal-header .navbar-nav .has-submenu:hover > ul li ul {
+        margin-top: -1px;
+    }
+    .normal-header .navbar-nav .has-submenu ul {
+        -webkit-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+        -moz-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+        -o-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+        transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+    }
+    .normal-header .navbar-nav .has-submenu .dropdown-menu {
+        min-width: 220px;
+        padding: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+    .normal-header .navbar-nav .has-submenu > ul {
+        position: absolute;
+        top: 130%;
+        visibility: hidden;
+        display: block;
+        opacity: 0;
+        left: 0;
+    }
+    .normal-header .navbar-nav .has-submenu > ul.start-right {
+        right: 0;
+        left: auto;
+    }
+    .normal-header .navbar-nav .has-submenu > ul li {
+        position: relative;
+    }
+    .normal-header .navbar-nav .has-submenu > ul li:hover > ul {
+        visibility: visible;
+        opacity: 1;
+        left: 105%;
+    }
+    .normal-header .navbar-nav .has-submenu > ul li:hover > ul.show-right {
+        right: 100%;
+    }
+    .normal-header .navbar-nav .has-submenu > ul li ul {
+        position: absolute;
+        top: 0;
+        visibility: hidden;
+        display: block;
+        opacity: 0;
+        left: 130%;
+    }
+    .normal-header .navbar-nav .has-submenu > ul li ul.show-right {
+        right: 130%;
+        left: auto;
+    }
+}

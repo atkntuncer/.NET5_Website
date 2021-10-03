@@ -1,0 +1,325 @@
+﻿@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- SITE META -->
+    <title>Paycore KVKK</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="~/hostpen/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/hostpen/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="~/hostpen/images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/hostpen/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="~/hostpen/images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="~/hostpen/images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="~/hostpen/images/apple-touch-icon-152x152.png">
+
+    <!-- BOOTSTRAP STYLES -->
+    <link rel="stylesheet" type="text/css" href="~/hostpen/css/bootstrap.min.css">
+    <!-- TEMPLATE STYLES -->
+    <link rel="stylesheet" type="text/css" href="~/hostpen/style.css">
+    <!-- RESPONSIVE STYLES -->
+    <link rel="stylesheet" type="text/css" href="~/hostpen/css/responsive.css">
+    <!-- COLORS STYLES -->
+    <link rel="stylesheet" type="text/css" href="~/hostpen/css/colors.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="~/hostpen/revolution/css/revslider.css">
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" type="text/css" href="~/hostpen/css/custom.css">
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="loader">
+        <div class="loader-container">
+            <img src="~/hostpen/images/load.gif" alt="" class="loader-site">
+        </div>
+    </div>
+    <!-- END PRELOADER -->
+    <!-- ******************************************
+    START SITE HERE
+    ********************************************** -->
+
+    <div id="wrapper">
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <span class="social-icons">
+                            <a class="facebook" href="#" title=""><i class="fa fa-facebook"></i></a>
+                            <a class="twitter" href="#" title=""><i class="fa fa-twitter"></i></a>
+                            <a class="google-plus" href="#" title=""><i class="fa fa-google-plus"></i></a>
+                            <a class="pinterest" href="#" title=""><i class="fa fa-pinterest"></i></a>
+                            <a class="linkedin" href="#" title=""><i class="fa fa-linkedin"></i></a>
+                            <a class="instagram" href="#" title=""><i class="fa fa-instagram"></i></a>
+                        </span><!-- end social -->
+                    </div><!-- end right -->
+                    <div class="col-md-8 col-sm-8 col-xs-12 text-right">
+                        <ul class="topbar-drops list-inline">
+                            <li><i class="fa fa-phone"></i> 1800-3456-7891</li>
+                            <li class="dropdown hidden-xs">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-dollar"></i> Dollar</a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Euro</a></li>
+                                    <li><a href="#">Rupi</a></li>
+                                    <li><a href="#">Dinnar</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown hidden-xs">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i> English</a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Turkish</a></li>
+                                    <li><a href="#">Arabic</a></li>
+                                    <li><a href="#">Russian</a></li>
+                                    <li><a href="#">French</a></li>
+                                </ul>
+                            </li>
+                            <li><i class="fa fa-envelope-o"></i> <a href="#" data-toggle="modal" data-target="#myModal">Submit Ticket</a></li>
+                        </ul><!-- end list-style -->
+                    </div><!-- end right -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end topbar -->
+
+        <header class="header normal-header" data-spy="affix" data-offset-top="195" style="background-color:#002f9b">
+            <div class="container">
+                @await Component.InvokeAsync("HostpenHeaderMenu")
+                <!-- end nav -->
+            </div>
+            <!-- end container -->
+        </header><!-- end header -->
+        <div class="section nopadding">
+            <div id="rev_slider_420_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="clean-news-slider" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+                <div id="rev_slider_420_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.0">
+                    <ul>
+                        <li data-index="rs-1450" data-transition="fadethroughtransparent" data-slotamount="default" data data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/hostpen/upload/blog_slider_01.jpg"
+                            data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
+                            data-param8="" data-param9="" data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="~/hostpen/upload/dummy.png" alt="" data-lazyload="/hostpen/upload/lock1.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                    </ul>
+                    <div class="tp-bannertimer tp-bottom" style="display:none;height: 5px; background-color: rgba(255, 255, 255, 0.75);"></div>
+                </div>
+            </div>
+            <!-- END REVOLUTION SLIDER -->
+        </div>
+
+        <div class="section wb">
+            <div class="container">
+                @await Component.InvokeAsync("HostpenPackages")
+            </div><!-- end container -->
+        </div><!-- end section -->
+        <footer class="footer">
+            <div class="container customfooter">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="widget clearfix">
+                            <div class="widget-title withbg">
+                                <h3>Contact with us</h3>
+                            </div><!-- end widget-title -->
+
+                            <div class="contact-widget">
+                                <div class="contactlist">
+                                    <i class="fa fa-phone alignleft"></i>
+                                    <h4>Call us today!</h4>
+                                    <p>+1 800-3456-7891<br>+1 800-3456-7892</p>
+                                </div><!-- end contactlist -->
+                            </div><!-- end contact -->
+
+                            <hr>
+
+                            <div class="contact-widget">
+                                <div class="contactlist">
+                                    <i class="fa fa-envelope-o alignleft"></i>
+                                    <h4>Email us!</h4>
+                                    <p><a href="mailto:info@yourawesomesitename.com">support@hostpen.com</a><br><a href="mailto:info@yourawesomesitename.com">payment@hostpen.com</a></p>
+                                </div><!-- end contactlist -->
+                            </div><!-- end contact -->
+
+                            <hr>
+
+                            <div class="contact-widget">
+                                <div class="contactlist">
+                                    <i class="fa fa-whatsapp alignleft"></i>
+                                    <h4>Chat with us!</h4>
+                                    <p>hostpen on Whatsapp</p>
+                                </div><!-- end contactlist -->
+                            </div><!-- end contact -->
+                        </div><!-- end clearfix -->
+                    </div><!-- end col -->
+                    <div class="col-md-3 col-sm-12">
+                        <div class="widget clearfix">
+                            <div class="widget-title">
+                                <h3>Company Links</h3>
+                            </div><!-- end widget-title -->
+
+                            <div class="link-widget">
+                                <ul class="check">
+                                    <li><a href="#">About Hostpen</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Our Team</a></li>
+                                    <li><a href="#">Worldwide Offices</a></li>
+                                    <li><a href="#">Worldwide Meet Up</a></li>
+                                    <li><a href="#">Awards & Reviews</a></li>
+                                    <li><a href="#">Hostpen in Press</a></li>
+                                    <li><a href="#">Carrers</a></li>
+                                    <li><a href="#">User Guide</a></li>
+                                    <li><a href="#">Knowledgebase</a></li>
+                                    <li><a href="#">Affiliate</a></li>
+                                    <li><a href="#">Partnership</a></li>
+                                </ul><!-- end check -->
+                            </div><!-- end link-widget -->
+                        </div><!-- end clearfix -->
+                    </div><!-- end col -->
+
+                    <div class="col-md-3 col-sm-12">
+                        <div class="widget clearfix">
+                            <div class="widget-title">
+                                <h3>Domain</h3>
+                            </div><!-- end widget-title -->
+
+                            <div class="link-widget">
+                                <ul class="check">
+                                    <li><a href="#">Buy a Domain</a></li>
+                                    <li><a href="#">Premium Domain Names</a></li>
+                                    <li><a href="#">Transfer Your Domain</a></li>
+                                    <li><a href="#">Domain Marketplace</a></li>
+                                </ul><!-- end check -->
+                            </div><!-- end link-widget -->
+                        </div><!-- end clearfix -->
+
+                        <div class="widget clearfix">
+                            <div class="widget-title">
+                                <h3>Support</h3>
+                            </div><!-- end widget-title -->
+
+                            <div class="link-widget">
+                                <ul class="check">
+                                    <li><a href="#">Get In Touch</a></li>
+                                    <li><a href="#">Support Forums</a></li>
+                                    <li><a href="#">Submit a Ticket</a></li>
+                                    <li><a href="#">Video Tutorials</a></li>
+                                    <li><a href="#">Live Chat Support</a></li>
+                                </ul><!-- end check -->
+                            </div><!-- end link-widget -->
+                        </div><!-- end clearfix -->
+                    </div><!-- end col -->
+
+                    <div class="col-md-3 col-sm-12">
+                        <div class="widget clearfix">
+                            <div class="widget-title">
+                                <h3>Web Hosting</h3>
+                            </div><!-- end widget-title -->
+                            <div class="link-widget">
+                                <ul class="check">
+                                    <li><a href="#">Web Hosting</a></li>
+                                    <li><a href="#">WordPress Hosting</a></li>
+                                    <li><a href="#">VPS Hosting</a></li>
+                                    <li><a href="#">Cloud Server</a></li>
+                                    <li><a href="#">Reseller Package</a></li>
+                                    <li><a href="#">Dedicated Hosting</a></li>
+                                </ul><!-- end check -->
+                            </div><!-- end link-widget -->
+                        </div>
+
+                        <div class="widget clearfix">
+                            <div class="widget-title">
+                                <h3>Be Social</h3>
+                            </div><!-- end widget-title -->
+
+                            <div class="link-widget">
+                                <ul class="check">
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">Twitter</a></li>
+                                    <li><a href="#">Google Plus</a></li>
+                                </ul><!-- end check -->
+                            </div><!-- end link-widget -->
+                        </div><!-- end clearfix -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+            <div class="payment-methods hidden-xs">
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="#"><img src="~/hostpen/images/icons/payment_01.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="~/hostpen/images/icons/payment_02.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="~/hostpen/images/icons/payment_03.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="~/hostpen/images/icons/payment_04.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="~/hostpen/images/icons/payment_05.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="~/hostpen/images/icons/payment_06.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </footer><!-- end footer -->
+
+        <div class="copyrights" style="background-color:#002f9b">
+            <div class="container">
+                <div class="row">
+                    <!-- end col -->
+
+                    <div class="col-md-9 col-sm-9">
+                        <ul class="footer-menu clearfix text-right">
+                            <li><a href="#" title="">Home</a></li>
+                            <li><a href="#" title="">About us</a></li>
+                            <li><a href="#" title="">Contact</a></li>
+                            <li><a href="#" title="">License</a></li>
+                            <li><a href="#" title="">Copyrights</a></li>
+                            <li><a href="#" title="">Terms & Usage</a></li>
+                            <li><a href="#" class="backtotop" title=""><i class="fa fa-angle-up"></i></a></li>
+                        </ul><!-- end footer-menu -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end copyrights -->
+
+    </div><!-- end wrapper -->
+    <!-- ******************************************
+    /END SITE
+    ********************************************** -->
+    <!-- ******************************************
+    DEFAULT JAVASCRIPT FILES
+    ********************************************** -->
+    <script src="~/hostpen/js/all.js"></script>
+    <script src="~/hostpen/js/custom.js"></script>
+
+    <!-- ******************************************
+    ADD YOUR CUSTOM JAVASCRIPT FILES HERE
+    ********************************************** -->
+    <script src="~/hostpen/revolution/js/revslider.js"></script>
+    <script src="~/hostpen/js/revcustom.js"></script>
+
+</body>
+</html>
